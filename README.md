@@ -10,13 +10,25 @@ Assignment was created via Laravel.
 cp .env.example .env
 ```
 
-2. run migrations (create SQLite db automatically)
+2. install dependencies
+
+```bash
+composer install
+```
+
+3. run migrations (create SQLite db automatically)
 
 ```bash
 php artisan migrate
 ```
 
-3. run server
+4. generate key
+
+```bash
+php artisan key:generate
+```
+
+5. run server
 
 ```bash
 php artisan serve
